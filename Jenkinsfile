@@ -7,7 +7,9 @@ pipeline {
             }
         }
 	stage('testing') {
+	    steps {
 		sh 'echo "I am now in testing mode"'
+	    }
 	}
     }
 }
